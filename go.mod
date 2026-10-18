@@ -3,11 +3,15 @@ module github.com/wangminghui0622-bit/admin-member
 go 1.26.8
 
 require (
-	admin-zero/admin-common v0.0.0
+	github.com/google/uuid v1.6.0
+	github.com/wangminghui0622-bit/admin-common v0.0.0
 	github.com/zeromicro/go-zero v1.10.3
+	golang.org/x/crypto v0.58.0
+	golang.org/x/oauth2 v0.36.0
 	google.golang.org/grpc v1.84.0
 	google.golang.org/protobuf v1.36.12
 	gorm.io/driver/mysql v1.6.0
+	gorm.io/gen v0.3.29
 	gorm.io/gorm v1.31.2
 )
 
@@ -32,7 +36,6 @@ require (
 	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/google/gnostic-models v0.7.0 // indirect
 	github.com/google/go-cmp v0.7.0 // indirect
-	github.com/google/uuid v1.6.0 // indirect
 	github.com/grafana/pyroscope-go v1.3.0 // indirect
 	github.com/grafana/pyroscope-go/godeltaprof v0.1.10 // indirect
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.27.7 // indirect
@@ -83,7 +86,6 @@ require (
 	golang.org/x/exp v0.0.0-20251219203646-944ab1f22d93 // indirect
 	golang.org/x/mod v0.42.0 // indirect
 	golang.org/x/net v0.61.0 // indirect
-	golang.org/x/oauth2 v0.36.0 // indirect
 	golang.org/x/sync v0.24.0 // indirect
 	golang.org/x/sys v0.49.0 // indirect
 	golang.org/x/term v0.47.0 // indirect
@@ -97,7 +99,6 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	gorm.io/datatypes v1.2.4 // indirect
-	gorm.io/gen v0.3.29 // indirect
 	gorm.io/hints v1.1.0 // indirect
 	gorm.io/plugin/dbresolver v1.6.2 // indirect
 	k8s.io/api v0.34.3 // indirect
@@ -112,4 +113,4 @@ require (
 	sigs.k8s.io/yaml v1.6.0 // indirect
 )
 
-replace admin-zero/admin-common => ../admin-common
+replace github.com/wangminghui0622-bit/admin-common => ../admin-common
